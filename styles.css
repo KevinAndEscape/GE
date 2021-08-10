@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90vw;
+  background: white;
+  border-radius: 20px;
+  padding-bottom: 4rem;
+}
+
+.content_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -4rem;
+}
+
+.content_right img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(-20px, -112px);
+          transform: translate(-20px, -112px);
+  background-image: url(img/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 45% 80%;
+}
+
+.content_left h1 {
+  text-align: center;
+}
+
+button.acc {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: black;
+  text-align: left;
+  padding: 1rem 1rem;
+  font-size: 0.87rem;
+  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button.acc.open img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+button.acc:hover {
+  font-weight: 700;
+}
+
+.acc_content {
+  color: #8a8a8a;
+  padding: 0rem 1rem;
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease;
+  transition: max-height 0.2s ease;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70vw;
+  }
+  .content_left h1 {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .content_left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-top: 3rem;
+  }
+  .content_right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .content_right img {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    background-size: 150%;
+    background-position: 100% 350%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
